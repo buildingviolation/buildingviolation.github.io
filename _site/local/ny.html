@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
     <link rel="icon" type="image/png" href="/assets/img/favicon.ico" sizes="16x16">
     
-        <title>Sign Up - Description for the Sign Up page - Building Violations</title>
+        <title>New York - Find in New York professional help with your building violation notice at the right price - Building Violations</title>
     
 </head>
 
-<body class="page-sub-page page-sign-in page-account" id="page-top">
+<body class="page-homepage navigation-fixed-top page-slider horizontal-search-float" id="page-top" data-spy="scroll" data-target=".navigation" data-offset="90">
 
   <div class="wrapper">
 
@@ -41,7 +41,7 @@
                         
                             <li ><a href="/">Home</a></li>
                         
-                        <li  class="active" ><a href="/signup">Sign Up</a></li>
+                        <li ><a href="/signup">Sign Up</a></li>
                         <li  id="signin-link"><a href="http://app.buildingviolation.com/login">Sign In</a></li>
                     </ul>
                 </nav><!-- /.navbar collapse-->
@@ -52,47 +52,54 @@
             </header><!-- /.navbar -->
         </div><!-- /.container -->
     </div><!-- /.navigation -->
-    
-      <div id="page-content">
-           <section id="banner">
-    <div class="block has-dark-background background-color-default-darker center text-banner">
-        <div class="container">
-            <h1 class="no-bottom-margin no-border">Sign up on buildingviolation.com</h1>
+
+       <div class="container">
+        <div class="geo-location-wrapper">
+            <span class="btn geo-location"><i class="fa fa-map-marker"></i><span class="text">Find My Position</span></span>
         </div>
     </div>
-</section>
 
-<div class="container signup-big">
-           <section id="pricing">  
+    <!-- Map -->
+    <div id="map"></div>
+    <!-- end Map -->
+     <!-- Search Box -->
+       <div class="search-box-wrapper">
+        <div class="search-box-inner">
+            <div class="container">
+                <div class="search-box map">
+                    <form role="form" id="form-map-sale" class="form-map form-search clearfix">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="form-search-address">Address or Street</label>
+                                    <input type="text" placeholder="e.g. 104 West 113th Street" name="form-search-address">
+                                </div><!-- /.form-group -->
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="form-search-city">State</label>
+                                    <input type="text" disabled="disabled" value="New york" name="form-search-city">
+                                </div><!-- /.form-group -->
+                            </div>
 
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="price-box customer">
-                            <header>
-                                <h2>I want to hire professionals</h2>
-                                <h3>Get introduced to the right contractor for your violation!</h3>
-                                <a href="http://app.buildingviolation.com/register" class="btn btn-default orange">I need a Pro</a>
-                            </header>
+                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="form-search-submit">&nbsp;</label>
+                                    <button type="submit" class="btn btn-default orange" name="form-search-submit">Submit</button>
+                                </div><!-- /.form-group -->
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="price-box pro">
-                            <header>
-                                <h2>I want to work on violations</h2>
-                                <h3>Respond to customers requests and get hired!</h3>
-                                <a href="http://app.buildingviolation.com/register-pro" class="btn btn-default orange">I'm a Pro</a>
-                            </header>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 center">
-                        <p>Already have an account? <a href="http://app.buildingviolation.com/login">Log in</a></p>
-                    </div>
-                </div>
-
-            </section>
-</div>
+                    </form><!-- /#form-map -->
+                </div><!-- /.search-box -->
+            </div><!-- /.container -->
+        </div><!-- /.search-box-inner -->
+    </div>
+    <!-- end Search Box -->
+    
+      <div id="page-content">
+        <div class="container">
+          
+        </div>
       </div>
 
           <!-- Page Footer -->
@@ -184,17 +191,40 @@
     <div id="overlay"></div>
 
     <script type="text/javascript" src="/assets/js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="/assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/assets/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="/assets/js/markerwithlabel_packed.js"></script>
+    <script type="text/javascript" src="/assets/js/infobox.js"></script>
+    <script type="text/javascript" src="/assets/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="/assets/js/bootstrap-select.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.placeholder.js"></script>
     <script type="text/javascript" src="/assets/js/icheck.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.vanillabox-0.1.5.min.js"></script>
     <script type="text/javascript" src="/assets/js/retina-1.1.0.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jshashtable-2.1_src.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.numberformatter-1.2.3.js"></script>
+    <script type="text/javascript" src="/assets/js/tmpl.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.dependClass-0.1.js"></script>
+    <script type="text/javascript" src="/assets/js/draggable-0.1.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.slider.js"></script>
+    <script type="text/javascript" src="/assets/js/markerclusterer_packed.js"></script>
+    <script type="text/javascript" src="/assets/js/custom-map.js"></script>
     <script type="text/javascript" src="/assets/js/custom.js"></script>
     <!--[if gt IE 8]>
     <script type="text/javascript" src="/assets/js/ie.js"></script>
     <![endif]-->
+    <script>
+        _latitude = 40.7033127;
+        _longitude = -73.979681;
+        _zoom= 8;
+        createHomepageGoogleMap(_latitude,_longitude,_zoom);
+        $(window).load(function(){
+            initializeOwl(false);
+        });
+    </script>
   </body>
 
 </html>
