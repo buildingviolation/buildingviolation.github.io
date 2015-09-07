@@ -6183,7 +6183,7 @@ footer div.inner{
 /* F O O T E R */
 
 #page-footer .inner h3{
-  margin-top:20px;
+  /*margin-top:20px;*/
   margin-bottom: 10px;
 }
 
@@ -6206,3 +6206,34 @@ footer div.inner{
 div.page-services p, div.page-services ul{
   font-size: 16px;
 }
+
+/* L O G O */
+div#brand{
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+div#brand.expanded{
+  width:175px;
+  height: 72px;
+  background: url(/assets/img/logo.png) no-repeat;
+  background-size: 100%;
+  top:0px;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+div#brand.collapsed{
+  width:175px;
+  height: 72px;
+  background: url(/assets/img/logo-up.png) no-repeat;
+  background-size: 100%;
+  top:-15px;
+  margin-top: 0px;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+
+
+
