@@ -5923,8 +5923,8 @@ body, html {
     /* box-shadow: 0 0 25px black; */
 }
 
-section#howitworks{
-  padding-bottom: 50px;
+section#howitworks .btn{
+  font-size: 18px;
 }
 section#howitworks .container{
   padding-left: 75px;
@@ -5996,6 +5996,9 @@ section#services{
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-color:#f3f3f3;  
+}
+section#services p{
+  font-size: 18px;
 }
 section#services h2{
   border:none;
@@ -6195,4 +6198,11 @@ footer div.inner{
 #page-footer .inner a.fa{
   color:#ffffff;
   border-radius: 15px;
+}
+
+
+/* S E R V I C E S */
+
+div.page-services p, div.page-services ul{
+  font-size: 16px;
 }
