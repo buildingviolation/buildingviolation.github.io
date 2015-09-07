@@ -1,0 +1,60 @@
+{% include /head.html %}
+
+<body class="page-homepage navigation-fixed-top page-slider horizontal-search-float" id="page-top" data-spy="scroll" data-target=".navigation" data-offset="90">
+
+  <div class="wrapper">
+
+      {% include /navbar.html %}
+
+      {% include /map.html %}
+    
+      <div id="page-content">
+        <div class="container">
+          {{ content }}
+        </div>
+      </div>
+
+      {% include /footer.html %}
+
+    </div>
+
+    <div id="overlay"></div>
+
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/markerwithlabel_packed.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/infobox.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/icheck.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.vanillabox-0.1.5.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/retina-1.1.0.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jshashtable-2.1_src.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.numberformatter-1.2.3.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/tmpl.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.dependClass-0.1.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/draggable-0.1.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery.slider.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/markerclusterer_packed.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/custom-map.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/custom.js"></script>
+    <!--[if gt IE 8]>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/ie.js"></script>
+    <![endif]-->
+    <script>
+        _latitude = {{ page.lat }};
+        _longitude = {{ page.long }};
+        _zoom= {{ page.zoom }};
+        createHomepageGoogleMap(_latitude,_longitude,_zoom);
+        $(window).load(function(){
+            initializeOwl(false);
+        });
+    </script>
+  </body>
+
+</html>

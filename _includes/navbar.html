@@ -1,0 +1,29 @@
+<div class="navigation">
+        <div class="container">
+            <header class="navbar" id="top" role="banner">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand nav" id="brand">
+                        <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/img/logo.png" alt="brand"></a>
+                    </div>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li {% if page.menuname == "home" %} class="active" {% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
+                        <li {% if page.menuname == "services" %} class="active" {% endif %}><a href="{{ site.baseurl }}/services">Services</a></li>
+                        <li {% if page.menuname == "signup" %} class="active" {% endif %}><a href="{{ site.baseurl }}/signup">Sign Up</a></li>
+
+                    </ul>
+                </nav><!-- /.navbar collapse-->
+                <div class="add-your-property">
+                    <a href="http://app.buildingviolation.com/submit-violation" class="btn btn-default"><i class="fa fa-plus"></i><span class="text">Submit a violation</span></a>
+                </div>
+
+            </header><!-- /.navbar -->
+        </div><!-- /.container -->
+    </div><!-- /.navigation -->
