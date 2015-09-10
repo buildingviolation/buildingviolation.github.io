@@ -83,6 +83,7 @@ body {
   background-color: #fff;
   color: #5a5a5a;
   font-family: 'Roboto', sans-serif;
+  color:#666666;
 }
 
 dl {
@@ -4769,15 +4770,18 @@ form label.error:before {
 }
 .horizontal-search-float .search-box .form-map {
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 15px 15px 5px 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  
 }
 .horizontal-search-float .search-box .form-map:hover {
-  background-color: white;
+  background-color: rgba(0,0,0,0.9);
 }
 .horizontal-search-float .search-box .form-map input[type="text"], .horizontal-search-float .search-box .form-map input[type="email"], .horizontal-search-float .search-box .form-map input[type="search"], .horizontal-search-float .search-box .form-map input[type="password"], .horizontal-search-float .search-box .form-map input[type="number"], .horizontal-search-float .search-box .form-map textarea, .horizontal-search-float .search-box .form-map select, .horizontal-search-float .search-box .form-map .selectpicker, .horizontal-search-float .search-box .form-map .price-range {
   background-color: #073855;
   border: none;
   color: #fff;
+  color:#000000;
   font-size: 14px;
   font-weight: bold;
   min-height: 40px;
@@ -4787,6 +4791,7 @@ form label.error:before {
 }
 .horizontal-search-float .search-box .form-map input[type="text"]:hover, .horizontal-search-float .search-box .form-map input[type="email"]:hover, .horizontal-search-float .search-box .form-map input[type="search"]:hover, .horizontal-search-float .search-box .form-map input[type="password"]:hover, .horizontal-search-float .search-box .form-map input[type="number"]:hover, .horizontal-search-float .search-box .form-map textarea:hover, .horizontal-search-float .search-box .form-map select:hover, .horizontal-search-float .search-box .form-map .selectpicker:hover, .horizontal-search-float .search-box .form-map .price-range:hover {
   background-color: #062f47;
+  background-color: #dddddd;
 }
 .horizontal-search-float .search-box .form-map .price-range {
   margin-bottom: 0;
@@ -6017,8 +6022,8 @@ section#services h3.subtitle{
 }
 
 section#services div.feature-box{
-  background-color: #ffffff;
-  border-radius: 15px;
+/*  background-color: #ffffff;
+  border-radius: 15px;*/
 }
 
 section#testimonials{
@@ -6108,11 +6113,12 @@ section#how-it-works-submit button{
 
 .search-box-title h1{
   color:#ffffff;
-  font-size: 62px;
+  font-size: 50px;
   font-weight: 400;
   letter-spacing: -3px;
   margin-bottom: 0px;
   padding-bottom: 0px;
+  border:none;
 }
 .search-box-title h3{
   margin-top: 0px;
@@ -6122,6 +6128,13 @@ section#how-it-works-submit button{
 
 .search-box-title h2{
   margin-bottom: 0px !important;
+  color:#ffffff;
+  font-size: 38px;
+  letter-spacing: -3px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding-top: 20px;
   border:none;
 }
 
@@ -6304,6 +6317,15 @@ div#brand.collapsed{
 
 li#signin-link{
   font-weight: bold;
+}
+
+/* S E A R C H    B O X */
+.search-box label{
+  color:white;
+}
+.horizontal-search-float .search-box .form-map input[type="text"]{
+  background-color: white;
+  min-height: 35px;
 }
 
 
