@@ -51,6 +51,12 @@
         $(window).load(function(){
             initializeOwl(false);
         });
+
+      $(document).ready(function($) {
+          $.get('http://utils.softelos.com/geo.php', function (data){
+            $('#form-search-city').attr('placeholder',data);
+          });
+      });
     </script>
 
   </body>
