@@ -11,4 +11,15 @@ $(document).ready(function($) {
 			$('div#brand').removeClass('collapsed');			
 		}
 	});
+
+
+	$('#search-box-button').click(function(e){
+		e.preventDefault();
+
+		var address=$('#box-address').val();
+		var city=$('#box-city').val();
+		var url='http://buildingviolation.softelos.com/report-violation?address='+address+'&city='+city;
+		window.location.href=url;
+	});
+
 });
