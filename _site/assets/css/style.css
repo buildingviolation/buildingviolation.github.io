@@ -1830,6 +1830,8 @@ ul.list-links li a:hover {
   margin-left: 10px;
 }
 
+
+
 .feature-box {
   border: 2px solid #f3f3f3;
   margin-bottom: 30px;
@@ -6166,6 +6168,22 @@ section.safety p{
   font-size: 18px;
 }
 
+
+/* PHONE NUMBER */
+
+div#phone{
+  position: absolute;
+  top:75px;
+  left: 125px;
+  width: 200px;
+  height: 75px;
+  z-index: 10;
+}
+div#phone p{
+  color:white;
+  font-size:20px;
+}
+
 /* P R O  B U T T O N */
 
 div#probutton{
@@ -6326,6 +6344,20 @@ li#signin-link{
 .horizontal-search-float .search-box .form-map input[type="text"]{
   background-color: white;
   min-height: 35px;
+}
+
+
+
+
+div.feature-box ul{
+  text-align: left;
+}
+div.feature-box p{
+  font-size: 14px;
+}
+
+section.no-padding{
+  margin-bottom: 0px !important;
 }
 
 
