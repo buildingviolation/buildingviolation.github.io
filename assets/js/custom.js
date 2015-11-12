@@ -7,12 +7,14 @@ $(document).ready(function($) {
 
     equalHeight('.equal-height');
 
+    $('div#small-big-picture').css('height',$(window).height()-40);
+
     $('.nav > li > ul li > ul').css('left', $('.nav > li > ul').width());
 
     var navigationLi = $('.nav > li');
     navigationLi.hover(function() {
         if ($('body').hasClass('navigation-fixed-bottom')){
-            if ($(window).width() > 768) {
+            if ($(window).width() > 100) {
                 var spaceUnderNavigation = $(window).height() - ($(this).offset().top - $(window).scrollTop());
                 if(spaceUnderNavigation < $(this).children('.child-navigation').height()){
                     $(this).children('.child-navigation').addClass('position-bottom');
@@ -370,7 +372,7 @@ function initializeOwl(_rtl){
         }
         $(".featured-properties-carousel").owlCarousel({
             rtl: _rtl,
-            items: 5,
+            items: 1,
             margin: 0,
             responsiveClass: true,
             responsiveBaseElement: ".featured-properties-carousel",
@@ -379,16 +381,16 @@ function initializeOwl(_rtl){
                     items:1
                 },
                 768:{
-                    items:3
+                    items:1
                 },
                 980:{
-                    items:4
+                    items:1
                 },
                 1200:{
-                    items:4
+                    items:1
                 },
                 1700:{
-                    items:5
+                    items:1
                 }
             },
             dots: false,
@@ -563,7 +565,7 @@ function centerSearchBox() {
         $('.leaflet-map-pane').css('top',-50);
         $(".homepage-slider").css('margin-top', -$('.navigation header').height());
     }
-    if ($(window).width() > 768) {
+    if ($(window).width() > 150) {
 
         $('#slider .slide .overlay').css('margin-bottom',$navigation.height());
         $('#map, #slider').each(function () {

@@ -3944,7 +3944,7 @@ ul.list-links li a:hover {
   top: 0px;
 }
 .search-box-inner{
-  width: 700px;
+  /*width: 700px;*/
 }
 .search-box-wrapper .search-box-inner h2 {
   margin-bottom: 20px;
@@ -4603,9 +4603,17 @@ form label.error:before {
   opacity: 0;
   padding-right: 15px;
   position: absolute;
-  width: 700px;
   z-index: 1;
+  width: 700px;
 }
+
+.search-box-small {
+  width: 230px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
 .search-box.show-search-box {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
@@ -5309,8 +5317,8 @@ body, html {
   }
 
   .form-map {
-    background-color: transparent !important;
-    padding: 0 !important;
+    /*background-color: transparent !important;
+    padding: 0 !important;*/
   }
 
   .fun-facts {
@@ -5688,28 +5696,28 @@ body, html {
   }
 
   .search-box-wrapper {
-    background-color: #073855;
-    padding: 20px 0;
-    position: relative;
-    top: 0 !important;
+    /*background-color: #073855;*/
+    /*padding: 20px 0;
+    position: relative;*/
+/*    top: 0 !important;*/
   }
   .search-box-wrapper h2 {
     color: #fff;
   }
   .search-box-wrapper input[type="text"], .search-box-wrapper input[type="email"], .search-box-wrapper input[type="search"], .search-box-wrapper input[type="password"], .search-box-wrapper input[type="number"], .search-box-wrapper textarea.form-control {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+   /* background-color: rgba(0, 0, 0, 0.4) !important;*/
   }
   .search-box-wrapper .background-image {
-    left: inherit;
-    margin-left: inherit;
+    /*left: inherit;
+    margin-left: inherit;*/
   }
   .search-box-wrapper .selectpicker, .search-box-wrapper .price-range {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    /*background-color: rgba(0, 0, 0, 0.4) !important;*/
   }
   .search-box-wrapper .search-box {
-    margin-top: 0;
+    /*margin-top: 0;
     padding-right: 0;
-    position: relative;
+    position: relative;*/
   }
   .search-box-wrapper .search-box .nav-pills {
     margin-bottom: 20px;
@@ -6173,14 +6181,14 @@ section.safety p{
 
 div#phone{
   position: absolute;
-  top:75px;
-  left: 125px;
+  top:90px;
+  left: 20px;
   width: 200px;
   height: 75px;
   z-index: 10;
 }
 div#phone p{
-  color:white;
+  color:white !important;
   font-size:20px;
 }
 
@@ -6307,6 +6315,10 @@ div#brand.expanded{
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+
+div#brand.expanded div#phone{
+  visibility: visible;
+}
 div#brand.collapsed{
   width:175px;
   height: 72px;
@@ -6317,6 +6329,9 @@ div#brand.collapsed{
   -moz-transition: 0.2s;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+div#brand.collapsed div#phone{
+  visibility: hidden;
 }
 
 .property .overlay .additional-info{
@@ -6360,5 +6375,31 @@ section.no-padding{
   margin-bottom: 0px !important;
 }
 
+button.navbar-toggle{
+  height: 40px !important;
+}
 
 
+nav.bs-navbar-collapse ul{
+  margin-right: 50px;
+  padding-right: 0px !important;  
+}
+
+nav.bs-navbar-collapse li{
+  text-align: right;
+  padding-right: 0px !important;
+}
+
+nav.bs-navbar-collapse li a{
+  padding-right: 0px !important;  
+}
+
+
+div#small-big-picture{
+  height: 400px;
+  background: url(/assets/img/slide-01.jpg) no-repeat center;  
+}
+
+div.container-small{
+  width: 100% !important;
+}

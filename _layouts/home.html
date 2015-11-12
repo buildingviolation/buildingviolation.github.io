@@ -5,13 +5,18 @@
   <div class="wrapper">
 
       {% include /navbar.html %}
-
-      {% include /phone.html %}
       
-      {% include /probutton.html %}
+      <div class="visible-md visible-lg visible-xl">
+        {% include /probutton.html %}
+      </div>
 
-      {% include /slider.html %}
+      <div class="visible-md visible-lg visible-xl">
+        {% include /slider.html %}
+      </div>
 
+      <div class="visible-xs visible-sm visible-md">
+        <div id="small-big-picture"></div>
+      </div>
       {% include /search-box.html %}
     
       <div id="page-content">
