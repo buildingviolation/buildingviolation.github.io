@@ -4,6 +4,7 @@ domain: "buildingviolation.com"
 year: 2015
 email: info@buildingviolation.com
 baseurl: "" # the subpath of your site, e.g. /blog/
+appurl: http://app.buildingviolation.com
 
 # Build settings
 markdown: kramdown

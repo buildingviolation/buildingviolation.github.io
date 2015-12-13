@@ -18,7 +18,7 @@ $(document).ready(function($) {
 
 		var address=$('#box-address').val();
 		var city=$('#box-city').val();
-		var url='http://buildingviolation.softelos.com/report-violation?address='+address+'&city='+city;
+		var url='http://buildingviolation.softelos.com/submit-violation?address='+address+'&city='+city;
 		window.location.href=url;
 	});
 
